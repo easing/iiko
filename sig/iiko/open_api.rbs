@@ -1,0 +1,7 @@
+module IIKO
+  class OpenAPI
+    @root: OpenAPIParser::Schemas::OpenAPI
+
+    def validate_request: -> void
+  end
+end

@@ -1,0 +1,7 @@
+module IIKO
+  module Methods
+    def self.anonymous?: (method: String) -> bool
+
+    def self.single?: (method: String) -> bool
+  end
+end

@@ -1,0 +1,6 @@
+module IIKO
+  class Config
+    attr_accessor server: String
+    attr_accessor timeout: Integer
+  end
+end

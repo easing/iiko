@@ -1,0 +1,33 @@
+module IIKO
+  class Client
+    ACCESS_TOKEN_METHOD: String
+    DEFAULT_API_SERVER: String
+
+    @access_token: String | nil
+    @api_login: String
+
+    @connection: Object
+    @organization_id: String
+
+    @server_uri: String
+
+    @timeout: Integer
+    @version: Integer
+
+    def initialize: (api_login: String, organization_id: String) -> void
+
+    def authenticate!: -> void
+
+    def call: (method: String, params: Hash[{ }, untyped]) -> Hash[{ }, untyped]
+
+    def connection: -> Object
+
+    def refresh_auth!: -> void
+
+    def reset_auth!: -> void
+
+    def send_request_to_iiko: -> untyped
+
+    def validate_request: (request: Request)-> void
+  end
+end

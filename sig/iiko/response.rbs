@@ -1,0 +1,15 @@
+module IIKO
+  class Response
+    @response: untyped
+
+    attr_reader response: untyped
+
+    def api_login_disabled?: -> bool
+
+    def error_message: -> String?
+
+    def successful?: -> bool
+
+    def unauthenticated?: -> bool
+  end
+end

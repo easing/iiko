@@ -1,0 +1,11 @@
+module IIKO
+  module Params
+    SERVER_URI: String
+
+    def build_request_uri: (method: String, server_uri: String) -> URI
+
+    def build_request_body: (method: String, params: Hash[{}, untyped]) -> Hash[{}, untyped]
+
+    def default_params_for: (method: String) -> Hash[{}, untyped]
+  end
+end

@@ -1,0 +1,19 @@
+module IIKO
+  class Request
+    @body: String
+    @params: params
+    @path: String
+
+    type params = Hash[String, untyped]
+
+    attr_reader body: String
+    attr_reader params: params
+    attr_reader path: String
+
+    def initialize: -> void
+
+    private
+
+    def default_params_for: (method: String, organization_id: nil) -> params
+  end
+end

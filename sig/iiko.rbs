@@ -1,0 +1,13 @@
+module IIKO
+  VERSION: String
+
+  @config: Config
+
+  def self.[]: (api_login: String, organization_id: String?, options: Hash[Symbol, untyped]) -> Client
+
+  def self.config: -> Config
+
+  def self.configure: -> void
+
+  def openapi: -> OpenAPIParser::Schemas::OpenAPI
+end

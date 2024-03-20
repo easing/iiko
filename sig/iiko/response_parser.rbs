@@ -1,0 +1,14 @@
+module IIKO
+  class ResponseParser
+    @method: String
+    @organization_id: String | nil
+
+    def parse: -> Hash[String, untyped]
+
+    private
+
+    def data_key: -> String
+
+    def should_extract_org?: -> bool
+  end
+end
